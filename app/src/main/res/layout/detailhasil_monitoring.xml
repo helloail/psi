@@ -1,0 +1,917 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary" />
+        <!--app:popupTheme="@style/AppTheme.PopupOverlay" />-->
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:background="#effffe"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="190dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_alignParentTop="true"
+                    android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/namalahandetail"
+                    android:layout_width="90dp"                    android:layout_height="wrap_content"
+                    android:text="Nama lahan"/>
+
+                    <TextView
+                        android:id="@+id/setnamalahandetail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="lahan nn"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/startperiodedetail"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="Start periode     "/>
+                    <TextView
+                        android:id="@+id/setstartperiodedetail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="start"/>
+                </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+            <TextView
+                android:id="@+id/endperiodedetail"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="End Periode       "/>
+                <TextView
+                    android:id="@+id/setendperiodedetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="start"/>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/periodedetail"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Periode Ke" />
+                <TextView
+                    android:id="@+id/setperiodedetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="start"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="3dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/hasillahandetail"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Hasil Lahan" />
+
+                <TextView
+                    android:id="@+id/sethasillahandetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Start" />
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true">
+
+    <LinearLayout
+        android:background="#d1cdcd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:background="#effffe"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginLeft="20dp"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:id="@+id/TitleDo"
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <!--<LinearLayout&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_margin="5dp"-->
+                    <!--android:orientation="vertical">-->
+                    <!--android:background="#FF4081">-->
+                    <LinearLayout
+                        android:background="#00ffffff"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="3dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:background="@drawable/shapesaranmonitoring"
+                                android:layout_margin="3dp">
+
+                                <TextView
+                                    android:textAlignment="center"
+                                    android:textSize="20pt"
+                                    android:textStyle="bold"
+                                    android:id="@+id/nilaiDO"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:id="@+id/warnado"
+                                android:background="@drawable/shapesaranmonitoring">
+
+                                <TextView
+                                    android:textSize="9pt"
+                                    android:textStyle="bold"
+                                    android:textAlignment="center"
+                                    android:id="@+id/KondisiDODO"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+
+                            android:paddingBottom="9dp"
+                        android:paddingTop="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                            android:background="@drawable/shapesaranmonitoring">
+
+                            <TextView
+                                android:id="@+id/SaranDO"
+                                android:layout_width="fill_parent"
+                                android:text="\n \n \n\n\n"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <!--&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="3dp"
+                    android:background="#effffe"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginLeft="20dp"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:id="@+id/TitleAmonia"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <!--<LinearLayout&#45;&#45;&#45;&#45;&#45;&#45;-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_margin="5dp"-->
+                    <!--android:orientation="vertical">-->
+                    <!--android:background="#FF4081">-->
+                    <LinearLayout
+                        android:background="#00ffffff"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_marginLeft="3dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_margin="3dp"
+                                android:background="@drawable/shapesaranmonitoring">
+
+                                <TextView
+                                    android:textAlignment="center"
+                                    android:textSize="20pt"
+                                    android:id="@+id/nilaiAmonia"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/warnaamonia"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:background="@drawable/shapesaranmonitoring">
+
+                                <TextView
+                                    android:textAlignment="center"
+                                    android:textSize="9pt"
+                                    android:textStyle="bold"
+                                    android:id="@+id/KondisiAmonia"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:paddingBottom="9dp"
+                            android:paddingTop="5dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:background="@drawable/shapesaranmonitoring">
+
+                            <TextView
+                                android:id="@+id/SaranAmonia"
+                                android:layout_width="fill_parent"
+                                android:text="\n \n \n\n\n"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!--===================================================-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="3dp"
+                    android:background="#effffe"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginLeft="20dp"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:id="@+id/TitleNitrit"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <!--<LinearLayout&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="3dp"-->
+                    <!--android:orientation="vertical">-->
+                    <!--android:background="#FF4081">-->
+                    <LinearLayout
+                        android:background="#00ffffff"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="3dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_margin="3dp"
+                                android:background="@drawable/shapesaranmonitoring">
+
+                                <TextView
+                                    android:textAlignment="center"
+                                    android:textSize="20pt"
+                                    android:id="@+id/nilaiNitrit"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/warnanitrit"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:background="@drawable/shapesaranmonitoring">
+
+                                <TextView
+                                    android:textAlignment="center"
+                                    android:textSize="9pt"
+                                    android:textStyle="bold"
+                                    android:id="@+id/KondisiNitrit"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:background="@drawable/shapesaranmonitoring">
+
+                            <TextView
+                                android:id="@+id/SaranNitrit"
+                                android:layout_width="fill_parent"
+                                android:text="\n \n \n\n\n"
+                                android:paddingBottom="9dp"
+                                android:paddingTop="5dp"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!--.......................................-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:background="#effffe"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginLeft="20dp"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:id="@+id/TitlePH"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <!--<LinearLayout-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+
+                    <!--android:orientation="vertical">-->
+                    <!--android:background="#FF4081">-->
+                    <LinearLayout
+                        android:background="#00ffffff"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_marginLeft="3dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_margin="3dp"
+                                android:background="@drawable/shapesaranmonitoring">
+
+                                <TextView
+                                    android:textAlignment="center"
+                                    android:textSize="20pt"
+                                    android:id="@+id/nilaiPH"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:id="@+id/warnaph"
+                                android:background="@drawable/shapesaranmonitoring">
+
+                                <TextView
+                                    android:textAlignment="center"
+                                    android:textSize="9pt"
+                                    android:textStyle="bold"
+                                    android:id="@+id/KondisiPH"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:background="@drawable/shapesaranmonitoring">
+
+                            <TextView
+                                android:id="@+id/SaranPH"
+                                android:layout_width="fill_parent"
+                                android:text="\n \n \n\n\n"
+                                android:paddingBottom="9dp"
+                                android:paddingTop="5dp"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <!--=====================================-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:background="#effffe"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginLeft="20dp"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:id="@+id/TitleSuhu"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <!--<LinearLayout&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="1dp"-->
+                    <!--android:orientation="vertical">-->
+                    <!--android:background="#FF4081">-->
+                    <LinearLayout
+                        android:background="#00ffffff"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_marginLeft="3dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_margin="3dp"
+                                android:background="@drawable/shapesaranmonitoring">
+
+                                <TextView
+                                    android:textAlignment="center"
+                                    android:textSize="20pt"
+                                    android:id="@+id/nilaiSuhu"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:id="@+id/warnasuhu"
+                                android:background="@drawable/shapesaranmonitoring">
+
+                                <TextView
+                                    android:textAlignment="center"
+                                    android:textSize="9pt"
+                                    android:textStyle="bold"
+                                    android:id="@+id/KondisiSuhu"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:background="@drawable/shapesaranmonitoring">
+
+                            <TextView
+                                android:id="@+id/SaranSuhu"
+                                android:layout_width="fill_parent"
+                                android:text="\n \n \n\n\n"
+                                android:paddingBottom="9dp"
+                                android:paddingTop="5dp"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+            </LinearLayout>
+            <!--.....................................-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:background="#effffe"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginLeft="20dp"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:id="@+id/TitleKecerahan"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <!--<LinearLayout&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="1dp"-->
+                    <!--android:orientation="vertical">-->
+                    <!--android:background="#FF4081">-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#00ffffff"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_marginLeft="3dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_margin="3dp"
+                                android:background="@drawable/shapesaranmonitoring">
+
+                                <TextView
+                                    android:textAlignment="center"
+                                    android:textSize="20pt"
+                                    android:id="@+id/nilaiKecerahan"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/warnakecerahan"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:background="@drawable/shapesaranmonitoring">
+
+                                <TextView
+                                    android:textAlignment="center"
+                                    android:textSize="9pt"
+                                    android:textStyle="bold"
+                                    android:id="@+id/KondisiKecerahan"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:background="@drawable/shapesaranmonitoring">
+
+                            <TextView
+                                android:id="@+id/SaranKecerahan"
+                                android:layout_width="fill_parent"
+                                android:text="\n \n \n\n\n"
+                                android:paddingBottom="9dp"
+                                android:paddingTop="5dp"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <!--///////////////////////////////////-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:background="#effffe"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginLeft="20dp"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:id="@+id/TitleSalinitas"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <!--<LinearLayout&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_margin="3dp"-->
+                    <!--android:orientation="vertical">-->
+                    <!--android:background="#FF4081">-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#00ffffff"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_marginLeft="3dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_margin="3dp"
+                                android:background="@drawable/shapesaranmonitoring">
+
+                                <TextView
+                                    android:textAlignment="center"
+                                    android:textSize="20pt"
+                                    android:id="@+id/nilaiSalinitas"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/warnasainitas"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:background="@drawable/shapesaranmonitoring">
+
+                                <TextView
+                                    android:textAlignment="center"
+                                    android:textSize="9pt"
+                                    android:textStyle="bold"
+                                    android:id="@+id/KondisiSalinitas"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:background="@drawable/shapesaranmonitoring">
+
+                            <TextView
+                                android:id="@+id/SaranSalinitas"
+                                android:layout_width="fill_parent"
+                                android:text="\n \n \n\n\n"
+                                android:paddingBottom="9dp"
+                                android:paddingTop="5dp"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                <!--</LinearLayout&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;-->
+            </LinearLayout>
+
+        <!--</ScrollView>-->
+    </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</RelativeLayout>
+<!--</android.support.percent.PercentRelativeLayaout>-->
